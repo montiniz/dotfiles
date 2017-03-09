@@ -21,9 +21,6 @@ session=${1:-qtile}
 
 case $session in
 	qtile		) exec qtile;;
-	awesome		) exec awesome;;
-	gnome		) exec gnome-session;;
-	gnome-classic	) exec gnome-session --session+gnome-classic;;
 	#No known session, try to run it as command
 	*) exec $1;;
 esac
