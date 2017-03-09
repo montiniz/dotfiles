@@ -1,0 +1,62 @@
+!#include ".Xresources.d/solarized-light.xresources"
+#include ".Xresources.d/solarized-dark.xresources"
+!#include ".Xresources.d/gruvbox-light.xresources"
+!#include ".Xresources.d/gruvbox-dark.xresources"
+!#include ".Xresources.d/rofi.xresources"
+
+URxvt*termName: rxvt-256color
+*intensityStyles: false
+!*fading: 20
+
+URxvt*depth: 32
+URxvt*.transparent: true
+!Urxvt*background: rgba:0000/0000/0200/c800
+URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 30
+
+URxvt*saveLines: 8000
+URxvt*internalBorder: 3
+URxvt*lineSpace: 0
+URxvt*loginShell: true
+
+! Urxvt fonts
+URxvt*font: xft:Droid Sans Mono for Powerline:size=10
+URxvt*boldFont: xft:Droid Sans Mono for Powerline::bold:size=10
+URxvt*italicFont: xft:Droid Sans Mono for Powerline::italic:size=10
+URxvt*boldItalicFont: xft:Droid Sans Mono for Powerline::bolditalic:size=10
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt*scrollStyle: rxvt
+URxvt*scrollBar: false
+
+! Perl extensions
+URxvt*perl-ext-common: default,matcher,resize-font,clipboard
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt*iso14755: False
+URxvt*iso14755_52: false
+URxvt*matcher.button: 1
+URxvt*urlLauncher: google-chrome-stable
+
+!Clipboard
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+
+! Fontsize shortcuts
+URxvt*resize-font.smaller: C-minus
+URxvt*resize-font.bigger: C-plus
+URxvt*resize-font.show: C-question
+
+
+
+! Cursor
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: false
+Xcursor.theme: DMZ-Black
+
+! Pointer
+URxvt*pointerBlank: true
