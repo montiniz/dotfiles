@@ -1,0 +1,1 @@
+/home/montiniz/.dotfiles/zsh/zshrc.symlink
